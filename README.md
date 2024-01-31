@@ -33,8 +33,18 @@ We select some important files for detailed description.
 ```
 
 ## Run 
-
-
+既有文本又有图像
+```python
+python main.py  --lr 0.001  --epoch 20 --train_path "data/train.txt" --test_path "data/test_without_label"
+```
+只有文本
+```python
+python main.py --use_image False --lr 0.001  --epoch 20 --train_path "data/train.txt" --test_path "data/test_without_label"
+```
+只有图像
+```python
+python main.py  --use_text False --lr 0.001  --epoch 20 --train_path "data/train.txt" --test_path "data/test_without_label"
+```
 
 ## Attribution
 
